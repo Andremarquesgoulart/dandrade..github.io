@@ -1,0 +1,52 @@
+/* ------- Classes ------- */
+.dispFlex {
+  display: flex;
+}
+
+.flex-direction-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.dispFlex-spBetw {
+  display: flex;
+  justify-content: space-between;
+}
+
+.align-vert {
+  display: flex;
+  align-items: center;
+}
+
+.align-hr {
+  display: flex;
+  justify-content: center;
+}
+
+.align-vert-hr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.align-vert-hr-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.align-space-bt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  width: 90%;
+  height: 85vh;
+}
+
+a {
+  text-decoration: none;
+}

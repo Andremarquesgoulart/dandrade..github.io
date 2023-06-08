@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- Meta tags para SEO -->
+      <meta name="description" content="Descrição do seu site">
+      <meta name="keywords" content="palavras-chave relacionadas ao seu site">
+      <meta name="author" content="Seu nome ou nome da sua empresa">
+      <meta name="robots" content="index, follow">
+
+      <!-- Meta tags para compartilhamento em redes sociais -->
+      <meta property="og:title" content="Título do seu site">
+      <meta property="og:description" content="Descrição do seu site">
+      <meta property="og:image" content="URL da imagem que aparecerá no compartilhamento">
+      <meta property="og:url" content="URL do seu site">
+      <meta name="twitter:card" content="summary_large_image">
+
+      <!-- Meta tags  iOS (iPhone ou iPad) -->
+      <meta name="theme-color" content="#ffffff">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+      <!-- Aos -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+      <!-- Links internos css -->
+      <link rel="stylesheet" href="/css/style-index.css">
+      <link rel="stylesheet" href="/css/reset.css">
+      <link rel="stylesheet" href="/css/style-login.css">
+
+      <!-- Links externos - Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+						
+      <title>Recuperação de Senha - D.Andrade</title>
+</head>
+
+<body>
+
+      <header>
+            <nav>
+                  <a class="logo" href="/">
+                        <img src="img/logo.png" alt="" srcset="Logo D.Andrade">
+                  </a>
+                  <div class="mobile-menu">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                  </div>
+                  <ul class="nav-list">
+                    <li><a href="index.html" class="border-btn">Início</a></li>
+                    <li><a href="dandrade.html">A D.Andrade</a></li>
+                    <li><a href="precatorios.html">Precatórios</a></li>
+                    <li><a href="login.html">Consulta Processual</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="cadastro.html" class="active">Cadastrar</a></li>
+                  </ul>
+            </nav>
+      </header>
+
+      <main>
+            <div class="box">
+              <div class="inner-box">
+                <div class="forms-wrap">
+
+                  <!-- Recuperação de senha -->
+                  <form action="index.html" autocomplete="off" class="sign-in-for">
+                    <div class="heading">
+                      <h2 class="titleSenha">Recuperação de senha</h2>
+                    </div>
+      
+                    <div class="actual-form">
+                      <div class="input-wrap">
+                        <input type="text" minlength="4" class="input-field" autocomplete="off" require />
+                        <label>Nome completo:</label>
+                      </div>
+
+											<div class="input-wrap">
+                        <input type="text" minlength="4" class="input-field" autocomplete="off" require />
+                        <label>CPF:</label>
+                      </div>
+      
+                      <div class="input-wrap">
+                        <input type="password" minlength="4" class="input-field" autocomplete="off" require />
+                        <label>Nova senha</label>
+                      </div>
+
+											<div class="input-wrap">
+                        <input type="password" minlength="4" class="input-field" autocomplete="off" require />
+                        <label>Confirme senha</label>
+                      </div>
+											
+											<input type="submit" value="Enviar" class="sign-btn" />
+											
+                      
+                      <p class="text">
+                        Não lembra da sua senha?
+                        <a href="#"> Clique aqui!</a>
+                      </p>
+                    </div>
+                  </form>
+                  
+                
+                </div>
+      
+                <div class="carousel">
+                  <div class="images-wrapper">
+                    <img src="./img/image1_1.png" class="image img-1 show" alt="" />
+                    <img src="./img/image2_2.png" class="image img-2" alt="" />
+                    <img src="./img/image3.png" class="image img-3" alt="" />
+                  </div>
+      
+                  <div class="text-slider">
+                    <div class="text-wrap">
+                      <div class="text-group">
+                        <h2>Saiba seu valor atualizado!</h2>
+                        <h2>Conheça nossos colaboradores</h2>
+                      </div>
+                    </div>
+      
+                    <div class="bullets">
+                      <span class="active" data-value="1"></span>
+                      <span data-value="2"></span>
+                      <span data-value="3"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+             
+            
+      
+
+    
+      <script src="/js/app.js"></script>
+      <script src="/js/mobileNavbar.js"></script>
+      <script src="/js/cadastro.js"></script>
+      <!-- Aos Script -->
+      <script>
+            AOS.init();
+      </script>
+
+</body>
+
+</html>

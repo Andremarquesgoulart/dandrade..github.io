@@ -1,0 +1,355 @@
+:root {
+  --primary: #7a4726;
+  --laranja-claro: #d9a66b;
+  --bege-claro: #e5c29f;
+  --marrom-escuro: #a26121;
+  --creme-claro: #f0dfc8;
+  --color-paragraf: #9f7d95;
+  --color-background: #e4fdfd;
+  --primary-rbg: 122, 71, 38;
+  --primary-rbga: 122, 71, 38, 1;
+  --offwhite1: #f5f5f5;
+  --offwhite2: #f0f0f0;
+  --offwhite3: #eaeaea;
+}
+
+/* Posicionamento Flex*/
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-spBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-full {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Margem bottom entre as sections */
+.quemSomos, .colaboradores {
+  margin-bottom: 50px;
+}
+
+/* Main - Quem Somos */
+.quemSomos {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.content-quemsomos {
+  width: 85%;
+  height: auto;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+.left-quemsomos {
+  box-sizing: border-box;
+}
+
+.left-quemsomos, .right-quemsomos {
+  width: 49%;
+  height: 85vh;
+  position: relative;
+}
+
+.title, h2, h3, .paragrafo-quemsomo, .txtquemsomos {
+  margin: 1px 0px;
+  padding: 0;
+} 
+
+.txtquemsomos h2 {
+  color: orangered;
+  font-size: 1.2rem;
+  line-height: 50px;
+}
+
+.txtquemsomos h1 {
+  color: var(--primary);
+  font-size: 2.7rem;
+  margin-left: -5px;
+}
+
+.txtquemsomos .paragrafo-quemsomos {
+  width: 62%;
+  height: auto;
+  color: #777;
+  margin-top: 30px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.txtquemsomos i {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 10px 20px #7a4726;
+  background-color: var(--primary);
+  font-size: 1.5rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.txtquemsomos h3 {
+  margin-top: 30px;
+  color: #333;
+}
+
+.txt-Subtitulo-quemsomos {
+  width: 62%;
+  color: #777;
+  font-weight: 500;
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+
+
+/* Right Quem Somos - Imagens */
+.right-quemsomos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.right-quemsomos .img-01{
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 20px;
+  background-image: url(/img/frames1.png);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+
+.right-quemsomos .img-02{
+  width: 90%;
+  height: 30%;
+  position: absolute;
+  left: 0;
+  margin-bottom: 180px;
+  border-radius: 15px;
+  background-image: url(/img/img-qs-02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #888;
+}
+
+.right-quemsomos .img-03{
+  width: 85%;
+  height: 30%;
+  position: absolute;
+  left: 0;
+  margin-bottom: -320px;
+  border-radius: 15px;
+  background-image: url(/img/img-qs-03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #888;
+}
+
+
+
+/* Colaboradres - Quem Somos */
+.colaboradores {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  
+}
+
+.content-colaboradores {
+  width: 85%;
+  height: 630vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-team {
+  width: 100%;
+  height: 15vh;
+  margin-bottom: 5vh;
+  text-align: center;
+}
+
+.title-team .h2-Team {
+  font-size: 1.3rem;
+  color: orangered;
+}
+
+.title-team .h3-Team {
+  font-size: 2.1rem;
+  color: var(--primary);
+}
+
+/* Imagens */
+
+.content-card {
+  width: 100%;
+  height: 50vh;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-card .card {
+  width: 280px;
+  height: 300px;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: #f0f0f0;
+  transition: 1s !important;
+}
+
+.txtCard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  bottom: 0;
+  opacity: 0;
+}
+
+.txtCard:hover {
+  transition: 1s;
+}
+
+.card:hover .txtCard {
+  background-image: linear-gradient(to top, #f0f0f0 , transparent);
+  opacity: 1;
+  transition: .3s !important;
+} 
+
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.card .cargo, .name, .contatoCard {
+  line-height: 35px;
+  margin-left: 6%;
+  position: relative;
+  top: 160px;
+  color: #333;
+}
+
+.card .cargo {
+  font-size: 1.1rem;
+}
+
+.card .name {
+  font-size: 1.3rem;
+}
+
+.card .contatoCard i{
+  font-size: 1.3rem;
+  margin-right: 5px;
+}
+.card .contatoCard i:hover {
+  color: var(--primary);
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

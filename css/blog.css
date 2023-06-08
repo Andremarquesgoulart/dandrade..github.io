@@ -1,0 +1,248 @@
+/* ------- Colors ------- */
+:root {
+    --primary: #7a4726;
+    --laranja-claro: #d9a66b;
+    --bege-claro: #e5c29f;
+    --marrom-escuro: #a26121;
+    --creme-claro: #f0dfc8;
+    --color-paragraf: #9f7d95;
+    --color-background: #e4fdfd;
+    --primary-rbg: 122, 71, 38;
+    --primary-rbga: 122, 71, 38, 1;
+    --offwhite1: #f5f5f5;
+    --offwhite2: #f0f0f0;
+    --offwhite3: #eaeaea;
+  }
+
+  .blog {
+    width: 100vw;
+    height: 250vh;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+  .headerBlog h1{
+    color: var(--primary);
+  }
+  .headerBlog {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+  }
+  .contentBlog {
+    width: 75vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    
+  }
+  .noticiaPrimary {
+    width: 68%;
+    height: 200vh;
+    position: relative;
+  }
+  .noticiasSecundary {
+    width: 30%;
+    height: 100vh;
+  }
+  .bannerNoticia {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .bannerNoticia::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/lula4.jpg);
+    background-size: cover;
+    transition: transform 0.3s ease;
+    transform: scale(1);
+    z-index: -1;
+  }
+  
+  .bannerNoticia:hover::before {
+    transform: scale(1.1);
+  }
+  .txt-bannerNoticia {
+    position: absolute;
+    bottom: 0;
+    margin: 30px;
+  }
+  .txt-bannerNoticia .title-txtBanner {
+    font-size: 1.7rem;
+    color: #fff;
+    margin: 0px;
+  }
+  .txt-bannerNoticia .title-txtBanner:hover {
+    opacity: .6;
+  }
+  .txt-bannerNoticia .public {
+    color: #fff;
+    font-size: .9rem;
+  }
+  
+  
+  .fourNoticias {
+    width: 100%;
+    height: 270px;
+    margin-top: 25px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .box-fourNoticias {
+    width: 180px;
+    height: 100%;
+  }
+  .box-fourNoticias {
+    position: relative;
+  }
+  .img-fourNoticias {
+    width: 100%;
+    height: 110px;
+    position: absolute;
+    top: 0;
+  }
+  .txtboxFourNoticias {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .txtboxFourNoticias h3 {
+    font-size: .9rem;
+  }
+  .txtboxFourNoticias p {
+    font-size: 1rem;
+    text-align: left;
+  }
+  .txtboxFourNoticias .dataFourNoticias {
+    font-size: .9rem;
+  }
+
+  
+.bottom-NoticiasPrimary {
+  width: 100%;
+  height: 100vh;
+}  
+
+.bottom-NoticiasPrimary .title-bottom-NoticiasPrimary{
+  color: var(--primary);
+  font-size: 1.1rem;
+  margin-left: 20px;
+}
+.content-bottom-NoticiasPrimary {
+  width: 100%;
+  height: 100vh;
+  
+  margin: 20px 0px;
+}
+.content-bottom-NoticiasPrimary 
+.noticiasBottom {
+  width: 100%;
+  height: 150px;
+  margin: 40px 0px;
+  border-left: 2px solid var(--primary); 
+}  
+
+.h4-noticiasBottom i {
+  color: var(--primary);
+}
+  
+.h4-noticiasBottom {
+  color: var(--primary);
+  font-size: .9rem;
+  margin: 0px;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+  
+.h3-noticiasBottom{
+  font-size: 1.3rem;
+  color: #222;
+  line-height: 40px;
+  margin: 0px;
+  margin-left: 10px;
+}
+
+.p-noticiasBottom {
+  font-size: 1rem;
+  color: #333;
+  margin-left: 10px;
+}
+
+.date {
+  font-size: .9rem;
+  color: #777;
+  font-weight: 500;
+ line-height: 30px; 
+ margin-left: 10px;
+}
+  
+
+/* Mais Lidas */
+.titleArticle {
+  margin: 0;
+  color: var(--primary);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.maisLidas-Article {
+  width: 100%;
+  height: 120px;
+  position: relative;
+  margin: 20px 0px;
+}
+.content-MaisLidas {
+  width: 96%;
+  height: 100px;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.txtMaisLidas {
+  width: 68%;
+  height: 100%;
+  position: relative;
+}
+.imgMaislidas {
+  width: 30%;
+  height: 100%;
+}
+.imgMaislidas {
+  background-image: url(/img/iconArticle-01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.icon-maislidas {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: orangered;
+  border-radius: 50%;
+  top: 0;
+  right: 0;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  opacity: .9;
+}
+
+.line-article {
+  width: 95%;
+  height: 1px;
+  background-color: #ccc; 
+}

@@ -1,0 +1,992 @@
+/*------------- RESPONSIVE ----------------*/
+/*------------- HEADER NAV ----------------*/
+@media (max-width: 999px) {
+  .header-top {
+    height: 9vh;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 9vh;
+    right: 0;
+    width: 60vw;
+    height: 90vh;
+    background: var(--primary);
+    color: #ffff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    z-index: 2;
+  }
+
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+
+  .nav-list li a {
+    color: #f5f1f1;
+    font-size: 1.3em;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .nav-list.active {
+    transform: translateX(0);
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+    background-color: var(--primary);
+  }
+
+  .mobile-menu.active .line2 {
+    opacity: 0;
+    background-color: var(--primary);
+  }
+
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+    background-color: var(--primary);
+  }
+}
+
+
+
+
+
+/*------------- RESPONSIVE ----------------*/
+/* ------------ BANNER INDEX ------------- */
+@media (max-width: 1260px) {
+  .txtBanner h1 {
+    font-size: 3.3rem;
+    transition: .3s;
+  }
+}
+
+@media (max-width: 1150px) {
+  .txtBanner .h1-txtBanner
+  {
+    font-size: 2.9rem;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 985px) {
+  .txtBanner .h1-txtBanner
+  {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .imgBanner .img {
+    width: 600px;
+    height: 550px;
+    position: relative;
+    top: -30px;
+  }
+
+  .txtBanner .h1-txtBanner {
+    font-size: 2.3rem;
+    line-height: 45px;
+    position: relative;
+    top: -10px;
+  }
+
+  .txtBanner .h2-txtBanner {
+    font-size: 1.1rem;
+    position: relative;
+    top: -30px;
+  }
+
+  .txtBanner .btn-banner {
+    position: relative;
+    top: -30px;
+  }
+
+  .txtBanner .social {
+    position: relative;
+    top: -30px;
+  }
+
+  .txtBanner .txtBanner-antecipe {
+    position: relative;
+    top: -30px;
+  }
+}
+
+
+@media (max-width: 784px) {
+  .nav-list {
+    width: 90%;
+  }
+
+  .banner {
+    width: 100vw;
+    height: 160vh;
+  }
+
+  .banner .content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+  }
+
+  .txtBanner {
+    width: 100vw;
+    height: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .imgBanner {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    bottom: -30px;
+  }
+
+  .txtBanner .h3-txtBanner {
+    font-size: 1.2rem;
+    position: relative;
+    top: 7%;
+  }
+
+  .txtBanner .h1-txtBanner {
+    display: none;
+  }
+
+  .txtBanner .txtBannerMobile {
+    width: 80vw;
+    display: flex;
+    position: relative;
+    top: 8%;
+    text-align: center;
+  }
+
+  .txtBanner .h2-txtBanner {
+    font-size: 1.1rem;
+    position: relative;
+    text-align: center;
+    top: 5%;
+    color: #555;
+  }
+
+  .txtBanner .btn-banner {
+    position: relative;
+    top: 5%;
+  }
+
+  .txtBanner .social {
+    position: relative;
+    top: 5%;
+    display: non;
+  }
+
+  .txtBanner .txtBanner-antecipe {
+    position: relative;
+    top: -30px;
+    display: none;
+  }
+
+  
+  /*------------- RESPONSIVE ----------------*/
+  /*----------- HOME A D.ANDRADE ------------*/
+  @media (max-width: 1230px) {
+    .videoDandrade {
+      height: 990px;
+      transition: .5s;
+      position: relative;
+    }
+  }
+  
+  @media (max-width: 1040px) {
+    .videoDandrade {
+      height: 870px;
+      transition: .5s;
+  
+    }
+  }
+  
+  @media (max-width: 999px) {
+    .videoDandrade {
+      height: 580px;
+      transition: .5s;
+    }
+  }
+  
+  @media (max-width: 895px) {
+    .txtHomedandrade h2 {
+      font-size: 1.9rem;
+    }
+  }
+
+    /*homeDandrade - 784px*/
+    .homeDandrade .content-homeDandrade {
+      width: 100%;
+      position: relative;
+      top: -80px;
+      transition: .5s;
+    }
+
+    .content-homeDandrade .titleVideo {
+      font-size: 2.2rem;
+    }
+  
+    .txtHomedandrade {
+      width: 100%;
+      height: 490px;
+      position: relative;
+      top: -90px;
+    }
+  
+    .txtHomedandrade h3 {
+      background-color: #555;
+    }
+  
+    .txtHomedandrade h2 {
+      font-size: 2rem;
+      padding: 0px 20px;
+      transition: .5s;
+      position: relative;
+      top: 0px;
+      background-color: #555;
+    }
+  
+    .txtHomedandrade .txt-full {
+      padding: 0px 40px;
+      text-align: left;
+      transition: .5s;
+      position: relative;
+      top: 50px;
+    }
+  
+    .contentBtnvideo {
+      position: relative;
+      top: 70px;
+    }
+  
+    .btnVideo {
+      box-shadow: 0px 5px 10px #7a4726;
+    }
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+/*------------- RESPONSIVE ----------------*/
+/*------------ HOME D.ANDRADE -------------*/
+@media (max-width: 1060px) {
+  .homeDandrade {
+    margin-bottom: 400px;
+  }
+  .content-homeDandrade h2 {
+    font-size: 2rem;
+    background-color: transparent;
+  }
+}/* max-width: 1060px */
+
+
+@media (max-width: 784px) {
+  .txtHomedandrade p {
+    top: 0px;
+  }
+}
+
+
+@media (max-width: 865px) {
+  .homeDandrade {
+    margin-bottom: 400px;
+  }
+  .content-homeDandrade h2 {
+    font-size: 1.7rem;
+  }
+}/* max-width: 865px */
+
+@media (max-width: 780px) {
+  .homeDandrade .content-homeDandrade {
+    width: 100%;
+  }
+  .txt-full {
+    margin-top: -50px;
+  }
+  .doisFull {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 685px) {
+  .content-homeDandrade .txtHomedandrade {
+    margin-top: -3%;
+    
+  }
+  .content-homeDandrade h2{
+    font-size: 1.3rem;
+  }
+  .txt-full {
+    margin-top: -50px;
+  }
+  .doisFull {
+    margin-top: 0px;
+  }
+  
+}
+
+@media (max-width: 615px) {
+  .content-homeDandrade .txtHomedandrade {
+    margin-top: -10%;
+    
+  }
+}
+@media (max-width: 500px) {
+  .content-homeDandrade .txtHomedandrade {
+    margin-top: -24%;
+    
+  }
+}
+
+
+
+
+
+
+
+  
+  
+  
+
+/*------------- RESPONSIVE ----------------*/
+/*----------- HOME PRECATÓRIOS ------------*/
+/* 1470px */
+@media (max-width: 1470px) {
+  .content-homePrecatorios {
+    width: 95%;
+    transition: 1s;
+  }
+}
+
+/* 1322px */
+@media (max-width: 1322px) {
+  .content-homePrecatorios {
+    width: 95%;
+  }
+
+  .title-homePrecatorios {
+    width: 100%;
+    height: 20vh;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  .title-homePrecatorios h2 {
+    font-size: 2.7rem;
+    color: var(--primary);
+  }
+
+  
+  /* Section - Grafic */
+  .calculadora {
+    width: 700px;
+    position: relative;
+    top: -50px;
+  }
+
+  .calculadora h1 {
+    font-size: 1.3rem;
+  }
+}
+
+/* 1320px */
+@media (max-width: 1320px) {
+  .calculadora {
+    width: 650px;
+    position: relative;
+    top: -50px;
+  }
+}
+
+/* 1115px */
+@media (max-width: 1115px) {
+  .title-homePrecatorios p {
+    font-size: 1rem;
+    height: 60px;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+  }
+}
+
+/* 1024px */
+@media (max-width: 1024px) {
+  .content-homePrecatorios {
+    transition: .5s;
+    width: 95%;
+  }
+}
+
+/* 1059px */
+@media (max-width: 1059px) {
+  .homePrecatorios {
+    position: relative;
+    top: -200px;
+  }
+}
+
+/* 900px */
+@media (max-width: 900px) {
+  .title-homePrecatorios p {
+    position: relative;
+  }
+}
+
+/* 840px */
+@media (max-width: 860px) {
+  .title-homePrecatorios p {
+    font-size: 1rem;
+  }
+}
+
+/* 785px */
+@media (max-width: 785px) {
+  .content-homePrecatorios h2 {
+    font-size: 2.4rem;
+    padding: 0px 20px;
+    transition: .5s;
+  }
+  .title-homePrecatorios p {
+    width: 94%;
+    height: auto;
+    text-align: justify;
+    font-size: 1.1rem;
+    margin: 0px 20px;
+    
+  }
+  .calculadora {
+    width: 95%;
+    top: -30px;
+    background-color: #555;
+  }
+  .calculdoraLeft {
+    display: flex;
+    width: 80%;
+  }
+  
+  .calculadora input {
+    width: 100%;
+    height: 5vh;
+    border: none;
+    border-radius: 3px;
+    margin-left: 10px;
+    background-color: var(--offwhite2);
+  }
+  .btn-simulator {
+    width: 100%;
+    background-color: orange;
+  }
+  
+}
+
+
+/* 720px */
+@media (max-width: 720px) {
+  .calculadora {
+    position: relative;
+    top: -30px;
+  }
+
+  .calculdoraLeft {
+    width: 410px;
+  }
+}
+
+/* 640px */
+@media (max-width: 640px) {
+  .calculadora { 
+    margin-top: 30px;
+}
+.title-homePrecatorios h2 {
+  font-size: 2rem;
+}
+}
+
+
+@media (max-width: 634px) {
+  .calculadora {
+    width: 500px;
+    position: relative;
+    top: -30px;
+  }
+
+  .calculdoraLeft {
+    width: 360px;
+  }
+}
+
+  @media (max-width: 591px) {
+    .calculadora {
+      width: 490px;
+      height: 10vh;
+      position: relative;
+      top: -10px;
+    }
+    .boxSimulacao {
+      position: relative;
+      top: 30px;
+    }
+  }
+
+  @media (max-width: 580px) {
+    .calculadora {
+      width: 430px;
+      height: 10vh;
+      position: relative;
+      top: 0px;
+    }
+  
+    .calculdoraLeft {
+      width: 300px;
+    }
+    
+    .title-homePrecatorios h2 {
+      font-size: 2rem;
+    }
+
+}
+
+@media (max-width: 540px) {
+  .content-homePrecatorios h2 {
+    font-size: 1.9rem;
+  }
+
+}
+
+
+
+
+
+/*----- RESPONSIVE ------*/
+/*----- HOME BLOG/NOTÍCIAS ------*/
+@media (max-width: 1320px) {
+  .homeBlog {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    transition: 0.5s;
+  }
+
+  .destaqueNoticias h3 {
+    transition: .5s;
+    font-size: 1.8rem;
+  }
+
+  .grade h3 {
+    transition: .5s;
+    font-size: 1.1rem;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .destaqueNoticias {
+    background-image: url(/img/lula3.jpg);
+  }
+}
+
+
+/* 999px */
+@media (max-width: 999px) {
+  .homeBlog {
+    width: 100vw;
+    height: 100vh;
+    padding-bottom: 60px;
+  }
+
+  .homeBlog .title h2 {
+    text-align: center;
+    padding: 0px 10px;
+    line-height: 40px;
+  }
+
+  .homeBlog .title p {
+    font-size: 100%;
+    font-weight: 500;
+  }
+
+  .content-homeBlog {
+    width: 100% !important;
+    height: 100% !important;
+    flex-direction: column;
+  }
+
+  .destaqueNoticias {
+    width: 89%;
+    height: 50%;
+    position: relative;
+    left: -6px;
+    bottom: 9px;
+    border-radius: 5px;
+    background-image: url(/img/lula4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .gradeNoticias {
+    width: 90%;
+    height: 50%;
+  }
+
+  .um,
+  .dois,
+  .tres,
+  .quatro {
+    border-radius: 5px;
+  }
+
+  .destaqueNoticias h3 {
+    transition: .5s;
+    font-size: 1.8rem;
+  }
+
+  .gradeTop,
+  .gradeBottom {
+    position: relative;
+    margin-bottom: 5px;
+  }
+
+  .grade h3 {
+    transition: .5s;
+    font-size: 1.1rem;
+  }
+}
+
+
+
+/*------------- RESPONSIVE ----------------*/
+/*----------- HOME DEPOIMENTOS ------------*/
+@media (max-width: 1470px) {
+  .buttonsDepoimento {
+    width: 20%;
+    left: 6.5%;
+    transition: .3s;
+  }
+
+  .txtDep {
+    height: 300px;
+    font-size: 1.1rem;
+  }
+
+  .content-dep {
+    height: 580px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 1140px) {
+    .txtBanner h1 {
+      font-size: 3rem;
+      transition: .3s;
+      padding: 0;
+      line-height: 55px;
+    }
+  }
+
+  @media (max-width: 1025px) {
+    .txtBanner h1 {
+      font-size: 2.8rem;
+      transition: .3s;
+      padding: 0;
+      line-height: 55px;
+    }
+  }
+
+
+
+  @media (max-width:810px) {
+
+    .imgDep,
+    .txtDep,
+    .iconDep,
+    .dadosCredorDep {
+      margin-bottom: 0px;
+      margin: 4px;
+      font-size: 1rem;
+      transition: .3s;
+    }
+
+  }
+
+  /* Depoimentos */
+  @media (max-width:613px) {
+
+    .imgDep,
+    .txtDep,
+    .iconDep,
+    .dadosCredorDep {
+      margin-bottom: 0px;
+      margin: 4px;
+      font-size: 1rem;
+      transition: .3s;
+    }
+
+    .txtDep,
+    .iconDep,
+    .dadosCredorDep {
+      width: 220px;
+      padding: 2px;
+      font-size: .9em;
+    }
+
+    .rightDep {
+      width: 124px;
+      margin-right: 0px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+/*------------- RESPONSIVE ----------------*/
+/*---------- FOOTER/NEWSLETTER ------------*/
+
+@media (max-width: 1670px) {
+  .contentNewsLetter {
+    width: 70%;
+    transition: .3s;
+  }
+} 
+
+@media (max-width: 1430px) {
+  .contentNewsLetter {
+    width: 80%;
+    transition: .3s;
+  }
+} 
+
+@media (max-width: 1270px) {
+  .contentNewsLetter {
+    width: 85%;
+    transition: .3s;
+  }
+} 
+
+@media (max-width: 1190px) {
+  .contentNewsLetter {
+    .h2-newsletter {
+      font-size: 2rem;
+    }
+    .h3-newsletter {
+      font-size: 1.1rem;
+    }
+    .txt-news {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 1090px) {
+  .newsletter {
+    width: 90%;
+    transition: .3s;
+  }
+}
+
+@media (max-width: 999px) {
+
+  /* BODY 999*/
+  body {
+    overflow-x: hidden;
+  }
+
+  /* FOOTER 999 */
+
+  footer {
+    height: 40vh;
+    margin-top: 500px;
+  }
+
+  .newsletter {
+    width: 95%;
+    margin-top: -430px;
+  }
+  .h2-newsletter {
+    font-size: 2rem;
+  }
+  .h3-newsletter {
+    font-size: 1.2rem;
+  }
+  .txt-news {
+    font-size: 1rem;
+  }
+  .email {
+    width: 80%;
+  }
+
+  .navFooter {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerTop{
+    width: 100%;
+    height: 40%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footerBottom {
+    width: 100%;
+    height: 40%;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+
+  .btnNews {
+    padding: 10px 40px;
+  }
+
+  .unorderedList {
+    padding: 0px 0px;
+    font-weight: 500;
+  }
+
+  .copy {
+    position: absolute;
+    margin-bottom: -80px;
+    text-align: center;
+  }
+
+  .contentNewsLetter {
+    width: 100%;
+  }
+
+  .copyMobile {
+    display: block;
+  }
+  .copyDesk {
+    display: none;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
